@@ -464,6 +464,56 @@ nav{
     color:rgb(243, 86, 69);
     font-weight: bold;
 }
+
+/* ------------------------ContactSection------------------- */
+
+#contact-section{
+    margin-top: 5rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    scroll-margin-top: 7rem;
+}
+
+.contact-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: salmon;
+    padding: 4rem;
+    border-radius: 2rem;
+}
+
+.contact-box-left{
+    color: white;
+}
+
+.contact-box-left h2{
+    font-size: 2rem;
+}
+
+.contactme-button{
+    
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: white;
+    width: 10rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    color: salmon;
+}
+.contactme-button a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    text-decoration: none;
+    color: salmon;
+}
+.contactme-button i{
+    font-size: 0.8rem;
+    rotate: 290deg;
+}
+
 /* -------------------------Footer--------------------------- */
 
 footer{
