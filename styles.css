@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* ---------------------------NavBar-------------------------------- */
+header{
+    position: sticky;
+    height: 70px;
+    top: 0;
+    padding: 1rem 14rem 0;
+    box-shadow: 0 0 8px 0 lightgray;
+    background-color: white;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.nav-logo a{
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: salmon;
+}
+
+.nav-links ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+}
+.nav-links a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.home{
+    border-bottom: 3px solid salmon;
+}
+
+.nav-links a:hover{
+    border-bottom: 3px solid salmon;
+}
+
+.nav-button{
+    background-color: salmon;
+    padding: 8px 32px;
+    border-radius: 20px;
+}
+
+.nav-button a{
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-button a i{
+    font-size: 1rem;
+}
+
+.nav-button:hover{
+    box-shadow: 0 0 5px 0 salmon;
+}
+
+#top-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: salmon;
+    border-radius: 50%;
+    right: 2rem;
+    bottom: 7rem;
+}
+
+#top-button a{
+    color: white;
+    font-size: 1.5rem;
+}
+
+#top-button:hover{
+    box-shadow: 0 0 5px 0 salmon;
+}
+
+/* ---------------------------------HeroSection----------------------- */
+
+#hero-section{
+    height: calc(80vh-70px);
+    margin-top: 7rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    scroll-margin-top: 13rem;
+}
+
+.hero-left{
+    width: 50%;
+}
+
+.available-button{
+    width: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    gap: 5px;
+    border-radius: 1rem;
+    background-color: rgb(250, 199, 193);
+    color:rgb(243, 86, 69);
+    font-weight: bold;
+}
+
+.available-button:hover{
+    box-shadow: 0 0 4px 0 rgb(248, 64, 44);
+}
+
+.available-button i{
+    font-size: 0.7rem;
+}
+
+.hero-info h1{
+    font-size: 6rem;
+}
+
+.hero-name{
+    color: salmon;
+}
+
+.hero-info p{
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    margin-top: 1rem;
+}
+
+.contact-button{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: salmon;
+    border-radius: 2rem;
+    transition: 0.5s ease;
+}
+
+.contact-button a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.contact-button i{
+    font-size: 1.2rem;
+}
+
+.contact-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 6px 0 salmon;
+}
+
+.CV-button{
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    border: 2px solid rgb(179, 176, 176);
+    background: white;
+    border-radius: 2rem;
+    transition: 0.5s ease;
+}
+
+.CV-button a{
+    color: gray;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+}
+
+.CV-button i{
+    font-size: 1.2rem;
+    transition: color 0.5s ease;
+}
+
+.CV-button:hover{
+    transform: scale(1.05);
+    background-color: salmon;
+    border: 0;
+    box-shadow: 0 0 5px 0 salmon;
+}
+
+.CV-button:hover a{
+    color: white;
+}
+
+.socials{
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+.socials i{
+    font-size: 2.5rem;
+    color: gray;
+    transition: 0.4s ease;
+}
+
+.socials i:hover{
+    transform: scale(1.05);
+    color: salmon;
+}
+
+.hero-right{
+    display: flex;
+    justify-content: right;
+    width: 50%;
+}
+
+.hero-right img{
+    width: 30rem;
+}
+
+/* ---------------------------AboutSection----------------------- */
+
+#about-section{
+    margin-top: 10rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    scroll-margin-top: 7rem;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.about-left{
+    width: 40%;
+}
+
+.about-left img{
+    width: 25rem;
+    border-radius: 1rem;
+}
+
+.about-right{
+    width: 70%;
+}
+.about-right p{
+    font-size: 1.2rem;
+    text-align: justify;
+    color:gray;
+}
+
+.know-more-button{
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.7rem;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 2rem;
+    margin-top: 8rem;
+    background-color: salmon;
+    color:white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.know-more-button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 5px 0 salmon;
+}
+/* ---------------------------SkillSection----------------------- */
+
+#skill-section{
+    margin-top: 10rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    scroll-margin-top: 7rem;
+}
+
+.title{
+   display: flex;
+   justify-content: center;
+}
+
+.title h1{
+    font-size: 2.5rem;
+    border-bottom: 4px solid salmon;
+}
+
+.skill-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.skill-left{
+    width: 40%;
+}
+
+.skill-left h2{
+    font-size: 2.5rem;
+}
+
+.skill-left p{
+    color: gray;
+}
+
+.skill-lists{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.skill-chips{
+    background-color: rgb(250, 199, 193);
+    color:rgb(243, 86, 69);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    font-weight: 550;
+}
+
+.skill-right{
+    width: 50%;
+}
+
+.skills{
+    margin-top: 1.5rem;
+}
+
+.skill-head{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 550;
+}
+.skill-pert{
+    color: salmon;
+}
+.skill-bar{
+    margin-top: 0.2rem;
+}
+.skill-bar-bg{
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: rgb(248, 235, 235);
+}
+
+.UIskill-progress{
+    width: 90%;
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: salmon;
+}
+
+.gdskill-progress{
+    width: 88%;
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: salmon;
+}
+
+.htmlskill-progress{
+    width: 80%;
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: salmon;
+}
+
+.reactskill-progress{
+    width: 50%;
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: salmon;
+}
+
+/* -------------------------WorkSection---------------------- */
+
+#works-section{
+    margin-top: 10rem;
+    margin-left: 14rem;
+    margin-right: 14rem;
+    scroll-margin-top: 7rem;
+}
+
+.work-content{
+    margin-top: 3rem;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.projects{
+    width: 25rem;
+    height: 32rem;
+    background-color: rgb(175, 173, 173);
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.projects:hover{
+    transform: scale(1.02);
+    box-shadow: 1px 1px 5px 0 gray;
+}
+
+/* --------------------Statistics Section---------------- */
+
+#stats-section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-top: 5rem;
+    scroll-margin-top: 7rem;
+    background-color:rgb(248, 235, 235);
+}
+
+.statistics{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 14rem;
+    margin-right: 14rem;
+}
+
+.stats-projects, .stats-design-created, .stats-practice-hours, .stats-tech-learned{
+    text-align: center;
+}
+.stats-number{
+    font-size: 4rem;
+    font-weight: bold;
+    color:rgb(243, 86, 69);
+}
+.stats-title{
+    color:rgb(243, 86, 69);
+    font-weight: bold;
+}
+/* -------------------------Footer--------------------------- */
+
+footer{
+    position: relative;
+    background-color: black;
+    margin-top: 3rem;
+}
+.foot-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 14rem;
+    color: gray;
+}
+
+.footerLogo{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer-right ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+.footer-right a{
+    color: gray;
+    text-decoration: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-right i{
+    font-size: 0.8rem;
+    transform: rotate(290deg);
+}
